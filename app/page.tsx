@@ -11,7 +11,7 @@ import { CityModal } from "@/components/city-modal"
 import { RankingSidebar } from "@/components/ranking-sidebar"
 
 
-const BACKEND_URL = "http://localhost:8080";
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8080";
 
 interface CityData {
   cityId: number
